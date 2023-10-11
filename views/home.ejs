@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        .product-card {
+            border: 1px solid #000;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(57, 57, 224);
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+    
+    <% products.forEach(function(product) { %>
+        <div class="product-card">
+            <h2><%= product.name %></h2>
+        </div>
+    <% }); %>
+</body>
+</html>

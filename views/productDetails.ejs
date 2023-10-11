@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+    <h1>Product Details</h1>
+    <div>
+        <h2><%= product.name %></h2>
+        <img src="/public/<%= product.image %>" alt="<%= product.name %>">
+        <p>Price : <%= product.price %></p>
+        <p>Description: <%= product.description %></p>
+    </div>
+</body>
+</html>

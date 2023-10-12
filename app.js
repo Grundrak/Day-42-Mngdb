@@ -82,7 +82,7 @@ app.get("/products/p/search", async (req, res) => {
   const searchquery = req.query.name;
   const minPrice = parseFloat(req.query.minPrice);
   const maxPrice = parseFloat(req.query.maxPrice);
-  const { category } = req.query;
+  const category = req.query;
 
   try {
     const query = {};
